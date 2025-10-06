@@ -13,14 +13,10 @@ class TestBasicOperations:
         assert add(2, 3) == 5
         assert add(10, 15) == 25
 
-
-    
     def test_subtract_positive_numbers(self):
         """Test subtracting positive numbers"""
         assert subtract(5, 3) == 2
         assert subtract(10, 4) == 6
-
-    
 
 class TestMultiplyDivideWithValidation:
     """Test multiplication and division with input validation."""
