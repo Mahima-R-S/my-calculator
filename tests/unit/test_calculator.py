@@ -12,11 +12,19 @@ class TestBasicOperations:
         """Test adding positive numbers"""
         assert add(2, 3) == 5
         assert add(10, 15) == 25
+
+    def test_add_negative_numbers(self):
+        assert add(-1,-3) == -4
+        assert add(-2,-5) == -7
     
     def test_subtract_positive_numbers(self):
         """Test subtracting positive numbers"""
         assert subtract(5, 3) == 2
         assert subtract(10, 4) == 6
+
+    def test_subtract_negatve_numbers(self):
+        assert subtract(-3,-2) == -1
+        assert subtract(-5,-9) == 4
 
 class TestMultiplyDivideWithValidation:
     """Test multiplication and division with input validation."""
