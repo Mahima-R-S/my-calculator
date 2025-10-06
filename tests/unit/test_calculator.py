@@ -32,9 +32,9 @@ class TestMultiplyDivideWithValidation:
     def test_multiply_input_validation(self):
         """Test multiply rejects non-numeric inputs."""
         with pytest.raises(TypeError, match="Both arguments must be numbers"):
-            multiply(5, 3)
+            multiply("5", 3)
         with pytest.raises(TypeError, match="Both arguments must be numbers"):
-            multiply(5, 3)
+            multiply(5, "3")
     
     def test_divide_input_validation(self):
         """Test divide rejects non-numeric inputs."""
